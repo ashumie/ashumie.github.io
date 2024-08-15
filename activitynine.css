@@ -1,0 +1,139 @@
+.detail, .pics, .touch, .landscape, .weed, .thatch, .aerating, .sod, .lawn{
+  float: left;
+}
+
+.detail {
+  margin-top: 80px;
+}
+
+.touch nav{
+  margin-top: -100px;
+}
+
+.card{
+  background-color: #d7f4d7;
+}
+
+.pics img{
+  margin: 70px auto;
+  display: block;
+}
+
+ul{
+  margin-left: -20px;
+  list-style-type: square;
+}
+
+#landscapetips h3{
+  text-align: center;
+}
+
+h4{ padding-top: 10px;
+text-align: center;}
+
+h5{
+  background-color: #F0FFF0;
+}
+fieldset{border: 1px solid lightgray;}
+
+.h3 span{font-size: 16px;}
+
+.lead {line-height: .5;}
+
+.nav img{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.nav a{
+  color: black;
+}
+
+hr {
+  width: 13%;
+  margin-top: -3px;
+  border-width: 1px;
+  border-color: #009900;
+}
+
+footer .nav a{
+color: white;
+}
+
+footer nav{
+padding-top: 20px;
+}
+
+footer nav .nav-link{
+  padding: 0;
+}
+
+.fa:hover {
+    color: white;
+    opacity: 0.5;
+}
+
+.fa{
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.caption {
+  padding-top: 80px;
+  height: 350px;
+  background-image: url("boblandscape.jpg");
+  background-size: cover;}
+
+#slide h2, .lead {
+  color: white;
+  position: relative;
+  animation-name: caption;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes caption {
+  0% {top: -120px}
+  100% {top: 100px}
+}
+
+.contact {
+  color: white;
+  padding: 10px 12px 10px 12px;
+  margin-top: 100px;
+  text-decoration: none;
+  border: lightgray 1px solid;
+  animation-name: contact;
+  background-color: #ffa500;
+  transition-property: transform;
+  transition-duration: 2s
+}
+
+.contact:hover {
+  transform: rotateY(180deg);
+  opacity: .25;
+  color: white;
+}
+
+#collapseThree .contact:hover {
+  transform: rotateY(180deg);
+  opacity: .25;
+  /*color: #009900;*/
+}
+
+#collapseOne .contact, #collapseTwo .contact, #collapseFive .contact,
+#collapseSix .contact, #collapseSeven .contact, #collapseEleven .contact,
+#collapseThree .contact, #collapseFour .contact, #collapseEight .contact,
+#collapseNine .contact, #collapseTen .contact, #collapseTwelve .contact {
+  color: white;
+  padding: 10px 12px 10px 12px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  border: lightgray 1px solid;
+  animation-name: contact;
+  background-color: #ffa500;
+  transition-property: transform;
+  transition-duration: 2s
+}

@@ -1,0 +1,38 @@
+<?php
+//start to bilding the mail String
+$msg  ="name:   ".$_POST['fname']."\n";
+$msg  .="email:   ".$_POST['email']."\n";
+$msg  .="message:   ".$_POST['message']."\n";
+$msg  .="select:   ".$_POST['select']."\n";
+
+//set up the mail
+$recipient = "info@abtmweb.com, assefashumie@gmail.com";
+$subject = "abtmweb Contact form";
+$mailheaders = "From: abtmweb <mail.abtmweb.com> \n";
+$mailheaders .= "Reply-To: ".$_POST['email'];
+
+//Send the mail
+
+mail($recipient, $subject, $msg, $mailheaders);
+?>
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>Send Mail from the form listing 11.10</title>
+    </head>
+    <body>
+      <p>Hello <strong><?php echo $_POST['fname']; ?></strong>, thank you
+        for your message.</p>
+      <p>Your e-mail address:
+        <strong><?php echo $_POST['email']; ?></strong></p>
+         <p>Your message: <?php echo $_POST['message']; ?> </p>
+        <p>Your subject: <?php echo $_POST['select']; ?> </p>
+     
+      
+      <p>We will respond to your enquiry soon.</p>
+      <p> Return to our <a href="https://abtmweb.com">home page.</a>.</p>
+
+    </body>
+  </html>
+  
+  
